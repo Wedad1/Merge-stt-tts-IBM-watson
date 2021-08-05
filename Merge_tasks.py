@@ -6,19 +6,11 @@ import threading
 import time
 import pyaudio
 import websocket
-import requests
-import sys
 from websocket._abnf import ABNF
 from ibm_watson import TextToSpeechV1
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson import AssistantV2
-from ibm_watson import ApiException
-from enum import Enum
-from typing import Dict, List
-from ibm_cloud_sdk_core import BaseService, DetailedResponse
-from ibm_cloud_sdk_core.authenticators.authenticator import Authenticator
-from ibm_cloud_sdk_core.get_authenticator import get_authenticator_from_environment
-from ibm_cloud_sdk_core.utils import convert_model
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 
 
 
